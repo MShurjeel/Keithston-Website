@@ -1,0 +1,89 @@
+:root {
+    --text-sub-heading: #E9BD8C;
+}
+
+.h-heading {
+    font-family: "Sansita Swashed";
+    color: #F5F5F5;
+}
+
+.header-section {
+    background-image: url('../images/header.png');
+    height: 100vh;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: initial;
+
+}
+
+.h-sub-heading {
+    color: var(--text-sub-heading);
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: -10rem;
+
+}
+
+.btn-primary {
+    background-color: #933C24;
+    border: none;
+}
+
+.h-learn-more {
+    color: var(--text-sub-heading);
+    text-decoration: none;
+}
+
+.Top-Products-Heading {
+    font-family: "Sansita Swashed";
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .Top-Products-Heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Top-Products-Heading {
+        font-size: 2.1rem;
+    }
+}
+
+.product1 {
+    background-image: url(../images/products/product-background-img.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    margin-top: 1rem;
+    background-size: cover;
+
+}
+
+.product1 img {
+    height: 280px;
+}
+
+.menu-gap {
+    margin-left: 8rem;
+
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--text-sub-heading) !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+    color: #F5F5F5;
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+.body{
+    font-family: "Inter";
+}
