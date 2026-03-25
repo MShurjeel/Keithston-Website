@@ -87,3 +87,142 @@
 .body{
     font-family: "Inter";
 }
+
+/* =========================================
+   Global Typography Standardization 
+========================================= */
+.section-title {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .section-title { font-size: 2.5rem; }
+}
+@media (max-width: 576px) {
+    .section-title { font-size: 2.1rem; }
+}
+
+/* =========================================
+   Banner Modules (Promo & About)
+========================================= */
+.banner-inner, .about-inner {
+    background-color: #f5f5f5; 
+    background-image: url('../images/banner-bg-1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    padding: 6rem 2rem;
+}
+
+.about-inner {
+    background-image: url('../images/banner-bg-2.png');
+}
+
+.banner-heading {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 3rem;
+    color: #933C24;
+}
+
+.banner-subtext {
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    max-width: 35rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* =========================================
+   Explore Section (Tabs & Grid)
+========================================= */
+.explore-tabs .nav-link {
+    color: #666;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.125rem solid transparent;
+    transition: all 0.3s ease;
+}
+
+.explore-tabs .nav-link.active,
+.explore-tabs .nav-link:hover {
+    color: #933C24;
+    border-bottom-color: #933C24;
+}
+
+.explore-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.explore-img:hover {
+    transform: scale(1.03);
+}
+
+/* =========================================
+   Featured Treats Section
+========================================= */
+.featured-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* =========================================
+   Footer Section
+========================================= */
+.footer-section {
+    background-image: url('../images/footer-bg-image.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #111; /* Fallback */
+}
+
+.footer-logo {
+    height: 4rem;
+    object-fit: contain;
+}
+
+.footer-social {
+    color: var(--text-sub-heading);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social:hover {
+    color: #ffffff;
+}
+
+.footer-heading {
+    color: var(--text-sub-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-text, 
+.footer-meta, 
+.footer-news-title {
+    font-family: "Inter", sans-serif;
+    color: #cccccc;
+    font-size: 0.9375rem;
+}
+
+.footer-list li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-list a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: var(--text-sub-heading);
+}
